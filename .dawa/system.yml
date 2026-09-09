@@ -1,0 +1,11 @@
+name: .github
+
+classification: business
+
+rationale: >
+  Default issue and pull request templates for the organisation. Holds no data.
+  Classified so that work here does not stop to ask; in practice every change to
+  it is Mechanical.
+
+classified: 2026-09-09
+review-when: scope change, or annually

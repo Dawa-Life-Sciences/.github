@@ -1,0 +1,44 @@
+name: Change request
+description: Something should work differently, or should exist.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: >
+        What is wrong today, from the point of view of whoever suffers it — not
+        the solution restated as an absence. "There is no export button" is a
+        missing feature; "I retype the figures into Excel every Friday" is a
+        problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: who
+    attributes:
+      label: Who has it
+      description: Which people, how often, and what it costs them today.
+    validations:
+      required: true
+
+  - type: textarea
+    id: shape
+    attributes:
+      label: What you had in mind
+      description: >
+        Optional, and genuinely optional. A description of the problem is
+        enough to file this. If you do have a solution in mind, saying so early
+        is useful — it just is not the part that has to be right.
+
+  - type: checkboxes
+    id: sensitive
+    attributes:
+      label: Does this touch any of these?
+      description: >
+        If any are ticked, this is Full-track work regardless of how small it
+        looks, and it will want a PRD before anyone builds it.
+      options:
+        - label: Who can sign in, or what they can do once signed in
+        - label: What gets recorded in an audit trail
+        - label: Data that supports a regulatory decision or record

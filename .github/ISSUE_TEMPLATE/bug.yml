@@ -1,0 +1,40 @@
+name: Bug
+description: Something is behaving wrongly.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happens
+    attributes:
+      label: What happens
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: how-to-see-it
+    attributes:
+      label: How to see it
+      description: >
+        The shortest path to reproducing it. If it cannot be reproduced on
+        demand, say what you know about when it does and does not happen —
+        that is useful and it is not a lesser bug report.
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Environment and version, if you know them.
+      placeholder: production, 1.6.9
+
+  - type: textarea
+    id: blast-radius
+    attributes:
+      label: Who or what is affected
+      description: >
+        One line. This is what decides whether the fix is urgent and whether it
+        can go on the Direct track — a bounded, understood blast radius can;
+        anything touching identity, sessions, roles or audit cannot.
+    validations:
+      required: true
