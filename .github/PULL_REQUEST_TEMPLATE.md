@@ -17,7 +17,7 @@
 
 - **Failing first:** <the assertion that failed on the parent commit>
 - **Mutation check:** <what was broken → which tests failed>  <!-- boundary tests only -->
-- **Suite:** <CI run, or the local result and why CI could not run it>
+- **Suite:** <n passed locally at sha; the release run is CI's>
 
 ## Risk
 
